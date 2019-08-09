@@ -1,4 +1,4 @@
-const posts = [
+export const Posts: any[] = [
 
     {
         userId: 1, id: 1,

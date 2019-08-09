@@ -1,1 +1,24 @@
-<p>detail works!</p>
+<div class="container mt-4">
+{{ user.name }}
+    <div class="list-group mt-4">
+        <div class="list-group-item active">{{ user.name }} comments</div>
+        <div *ngFor="let item of comments">
+            <button type="button" class="list-group-item list-group-item-action">{{item.body}}</button>
+        </div>
+    </div>
+
+    <div class="list-group mt-4">
+        <div class="list-group-item active">{{ user.name }} posts</div>
+        <div *ngFor="let item of posts">
+            <button type="button" class="list-group-item list-group-item-action">{{item.body}}</button>
+        </div>
+    </div>
+
+    <div class="list-group mt-4">
+        <div class="list-group-item active">{{ user.name }} albums</div>
+        <div *ngFor="let item of albums">
+            <button type="button" class="list-group-item list-group-item-action">{{item.title}}</button>
+        </div>
+    </div>
+
+</div>

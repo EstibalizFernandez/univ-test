@@ -1,1 +1,10 @@
-<p>general works!</p>
+<div class="container mt-4">
+
+    <div class="list-group">
+        <div class="list-group-item active">Users</div>
+        <div *ngFor="let user of users">
+            <button type="button" class="list-group-item list-group-item-action" [routerLink]="['./detail', user.id]">{{user.name}}</button>
+        </div>
+    </div>
+
+</div>
